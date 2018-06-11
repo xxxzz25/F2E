@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <input type="email" v-model="email" placeholder="請輸入你的email">
+        <button @click="click() , show = !show">gogo</button>
+        <div class="show" v-show="show" v-if="name != ''">
+            <br> {{name}} 恭喜你在 {{time}} 時 {{msg}}
+        </div>
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                show: false,
+                email: '',
+                msg: '',
+                name: '',
+                time: '',
+            },
+            methods: {
+                click: function () {
+                    axios.post('https://www.thef2e.com/api/isSignUp', {
+                        email: this.email,
+                    })
+                        .then((response) => {
+                            console.log(response);
+                            if (response.data.success) {
+                                this.msg = response.data.message;
+                                this.name = response.data.nickName;
+                                this.time = moment(response.data.timeStamp).format('MMMM Do YYYY, h:mm:ss a');
+                                console.log(this.msg);
+                                console.log(this.name);
+                                console.log(this.time);
+                            } else {
+                                this.msg = response.data.message;
+                            }
+                        })
+                        .catch((error) => {
+                            console.log(error);
+                        });
+                    this.email = '';
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>
