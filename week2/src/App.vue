@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <HelloWorld/>
+    <FilterArea/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import FilterArea from './components/Filter'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    FilterArea
   }
 }
 </script>
