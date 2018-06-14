@@ -154,8 +154,18 @@
               </div>
             </div>
           </div>
+          <div class="page">
+            <div class="item"><i class="fas fa-angle-double-left"></i></div>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item"><i class="fas fa-angle-double-right"></i></div>
+          </div>
         </div>
       </div>
+
   </div>
 </template>
 
@@ -173,7 +183,6 @@ export default {
 <style lang="scss" scoped>
 .fun {
   width: 1200px;
-  height: 953px;
   margin: 0 auto;
   background-color: #f2f2f2;
   &:after {
@@ -324,6 +333,7 @@ export default {
           font-style: italic;
           padding: 8px;
           color: #9013fe;
+          cursor: pointer;
         }
       }
     }
@@ -333,10 +343,15 @@ export default {
         width: 100%;
         display: flex;
         margin-bottom: 24px;
+        transition: all .7s;
+        cursor: pointer;
+        &:hover{
+          box-shadow: 5px 8px 3px #888;
+        }
         .pic {
           width: 220px;
           height: 220px;
-          background-color: #069;
+          background-color: #9013FE;
         }
         .text {
           box-sizing: border-box;
@@ -385,6 +400,32 @@ export default {
             .city {
               margin-right: 20px;
             }
+          }
+        }
+      }
+      .page{
+        display: flex;
+        float: right;
+        .item{
+          width: 42px;
+          height: 42px;
+          background-color: #fff;
+          color: #9013FE;
+          border: 1px solid #ECEEEF;
+          border-radius: 4px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 16px;
+          font-family: "HelveticaNeue","arial";
+          &:hover{
+            box-shadow: none;
+            background-color:#9013FE;
+            color: #fff;
+          }
+          &:nth-child(2){
+            background-color:#9013FE;
+            color: #fff;
           }
         }
       }
