@@ -403,32 +403,32 @@ export default {
           }
         }
       }
-      .page{
-        display: flex;
-        float: right;
-        .item{
-          width: 42px;
-          height: 42px;
-          background-color: #fff;
-          color: #9013FE;
-          border: 1px solid #ECEEEF;
-          border-radius: 4px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: 16px;
-          font-family: "HelveticaNeue","arial";
-          &:hover{
-            box-shadow: none;
-            background-color:#9013FE;
-            color: #fff;
-          }
-          &:nth-child(2){
-            background-color:#9013FE;
-            color: #fff;
-          }
-        }
-      }
+      // .page{
+      //   display: flex;
+      //   float: right;
+      //   .item{
+      //     width: 42px;
+      //     height: 42px;
+      //     background-color: #fff;
+      //     color: #9013FE;
+      //     border: 1px solid #ECEEEF;
+      //     border-radius: 4px;
+      //     display: flex;
+      //     justify-content: center;
+      //     align-items: center;
+      //     font-size: 16px;
+      //     font-family: "HelveticaNeue","arial";
+      //     &:hover{
+      //       box-shadow: none;
+      //       background-color:#9013FE;
+      //       color: #fff;
+      //     }
+      //     &:nth-child(2){
+      //       background-color:#9013FE;
+      //       color: #fff;
+      //     }
+      //   }
+      // }
     }
   }
 }
