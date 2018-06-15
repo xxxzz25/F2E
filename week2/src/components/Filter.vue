@@ -425,7 +425,7 @@ export default {
           }
           &:nth-child(2){
             background-color:#9013FE;
-            // color: #fff;
+            color: #fff;
           }
         }
       }
