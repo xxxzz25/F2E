@@ -246,7 +246,6 @@ export default {
   background-color: #f2f2f2;
   padding: 30px 42px 42px 42px;
   .container {
-
     .top {
       display: flex;
       justify-content: space-between;
@@ -257,16 +256,16 @@ export default {
         font-size: 24px;
       }
       .right {
-        span{
+        span {
           font-size: 16px;
           color: #9b9b9b;
           margin-right: 20px;
-          i{
+          i {
             color: #000;
             margin: 0 5px;
           }
         }
-        select{
+        select {
           background-color: transparent;
           outline: none;
           border: none;
@@ -276,157 +275,157 @@ export default {
       }
     }
 
-    .num{
+    .num {
       display: flex;
       justify-content: space-between;
       margin-bottom: 20px;
-      .item{
+      .item {
         box-sizing: border-box;
         width: 300px;
         background-color: #fff;
-        box-shadow: 0 0 10px 5px #EBEBEB;
+        box-shadow: 0 0 10px 5px #ebebeb;
         border-radius: 3px;
-        padding: 30px ;
-        .text{
+        padding: 30px;
+        .text {
           text-align: center;
           font-size: 16px;
           margin-bottom: 14px;
-          i{
+          i {
             font-size: 26px;
             margin-right: 8px;
           }
         }
-        .number{
+        .number {
           font-size: 36px;
           font-weight: bold;
           text-align: center;
         }
-        &:nth-child(1) .number{
-          color: #7ED321;
+        &:nth-child(1) .number {
+          color: #7ed321;
         }
-        &:nth-child(2) .number{
-          color: #D0021B;
+        &:nth-child(2) .number {
+          color: #d0021b;
         }
-        &:nth-child(3) .number{
-          color: #4A90E2;
+        &:nth-child(3) .number {
+          color: #4a90e2;
         }
       }
     }
-    
-    .line{
-      box-shadow: 0 0 10px 5px #EBEBEB;
+
+    .line {
+      box-shadow: 0 0 10px 5px #ebebeb;
       height: 406px;
       background-image: url(../assets/111.png);
     }
 
-    .product{
+    .product {
       display: flex;
       justify-content: space-between;
       margin-top: 20px;
-      .left{
+      .left {
         width: 460px;
         background-color: #fff;
         padding: 30px 40px;
         margin-right: 20px;
         box-sizing: border-box;
-        box-shadow: 0 0 10px 5px #EBEBEB;
-        .title{
+        box-shadow: 0 0 10px 5px #ebebeb;
+        .title {
           font-weight: bold;
           font-size: 24px;
         }
-        .item{
+        .item {
           display: flex;
           align-items: center;
           border-bottom: 1px solid #ebebeb;
           padding: 24px 0;
-          i{
+          i {
             font-size: 45px;
           }
-          .icon{
+          .icon {
             width: 45px;
           }
-          .com{
+          .com {
             margin-left: 20px;
             font-size: 16px;
             color: #9b9b9b;
             width: 120px;
           }
-          .count{
+          .count {
             font-size: 20px;
             margin-left: 55px;
             text-align: right;
             width: 56px;
             font-weight: bold;
           }
-          .percent{
+          .percent {
             font-size: 16px;
             margin-left: 30px;
             font-weight: bold;
-            i{
+            i {
               font-size: 18px;
               margin-right: 5px;
             }
           }
-          &:nth-child(2) .percent{
-            color: #7ED321;
+          &:nth-child(2) .percent {
+            color: #7ed321;
           }
-          &:nth-child(3) .percent{
-            color: #7ED321;
+          &:nth-child(3) .percent {
+            color: #7ed321;
           }
-          &:nth-child(4) .percent{
-            color: #D0021B;
+          &:nth-child(4) .percent {
+            color: #d0021b;
           }
-          &:nth-child(5) .percent{
-            color: #D0021B;
+          &:nth-child(5) .percent {
+            color: #d0021b;
           }
         }
       }
-      .right{
+      .right {
         width: 460px;
         background-color: #fff;
         padding: 30px 40px;
         box-sizing: border-box;
-        box-shadow: 0 0 10px 5px #EBEBEB;
-        .title{
+        box-shadow: 0 0 10px 5px #ebebeb;
+        .title {
           font-weight: bold;
           font-size: 24px;
           margin-bottom: 22px;
         }
-        .item{
+        .item {
           display: flex;
           border-bottom: 1px solid #ebebeb;
           padding: 8px 0;
-          .pic{
+          .pic {
             width: 100px;
             height: 100px;
             background-color: #069;
           }
-          .text{
+          .text {
             margin-left: 21px;
             font-size: 16px;
-            color: #9B9B9B;
-            .itemName{
+            color: #9b9b9b;
+            .itemName {
               font-weight: bold;
               font-size: 20px;
               margin-top: 11px;
               margin-bottom: 8px;
               color: #000;
             }
-            .date{
+            .date {
               margin-bottom: 8px;
-            i{
-              font-size: 10px;
-              margin-right: 8px;
+              i {
+                font-size: 10px;
+                margin-right: 8px;
+              }
             }
-            }
-            .name{
-              i{
+            .name {
+              i {
                 font-size: 20px;
                 margin-right: 13px;
               }
             }
           }
-          .total{
+          .total {
             width: 52px;
             margin-left: 60px;
             display: flex;
@@ -434,18 +433,18 @@ export default {
             justify-content: flex-end;
             align-items: flex-end;
             margin-bottom: 8px;
-            .totalText{
+            .totalText {
               font-size: 14px;
               margin-bottom: 2px;
             }
-            .totalNum{
+            .totalNum {
               font-weight: bold;
               font-size: 20px;
             }
           }
         }
       }
-    } 
+    }
   }
 }
 </style>
