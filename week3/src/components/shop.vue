@@ -48,9 +48,7 @@
             <div class="number">41880</div>
           </div>
         </div>
-        <div class="line">
-          <img src="../assets/111.png">
-        </div>
+        <div class="line"></div>
         <div class="product">
           <div class="left">
             <div class="title">
@@ -318,9 +316,7 @@ export default {
     .line{
       box-shadow: 0 0 10px 5px #EBEBEB;
       height: 406px;
-      img{
-        width: 100%;
-      }
+      background-image: url(../assets/111.png);
     }
 
     .product{
