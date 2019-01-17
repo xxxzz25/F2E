@@ -1,3 +1,3 @@
 module.exports = {
-  baseUrl: '/09SkillTree/',
+  baseUrl: './09SkillTree/',
 };
