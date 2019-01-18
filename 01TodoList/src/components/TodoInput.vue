@@ -273,8 +273,8 @@ export default {
         left: 0;
         width: 100%;
         height: 60px;
+        display: flex;
         div {
-          display: inline-block;
           width: 50%;
           line-height: 60px;
           text-align: center;
