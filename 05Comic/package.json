@@ -1,0 +1,38 @@
+{
+  "name": "week5",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "element-ui": "^2.4.11",
+    "flickity": "^2.1.2",
+    "flickity-as-nav-for": "^2.0.1",
+    "flickity-hash": "^1.0.3",
+    "vue": "^2.5.21",
+    "vue-axios": "^2.1.4",
+    "vue-router": "^3.0.1",
+    "vue-underscore": "^0.1.4",
+    "vuex": "^3.1.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.4",
+    "@vue/cli-service": "^3.0.4",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
